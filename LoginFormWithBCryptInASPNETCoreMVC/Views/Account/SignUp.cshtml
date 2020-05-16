@@ -1,0 +1,43 @@
+﻿@{ 
+    Layout = null;
+}
+@model LoginFormWithBCryptInASPNETCoreMVC.Models.Account
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>SignUp 페이지</title>
+</head>
+<body>
+    <h3>SignUp Page</h3>
+    <form method="post" asp-controller="account" asp-action="signup">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" asp-for="Username" />
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" asp-for="Password" />
+                </td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input type="text" asp-for="FullName" />
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="SignUp" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

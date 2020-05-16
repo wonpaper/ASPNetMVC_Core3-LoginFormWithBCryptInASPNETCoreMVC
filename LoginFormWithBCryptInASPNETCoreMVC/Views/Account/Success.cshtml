@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+}
+@using Microsoft.AspNetCore.Http;
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Success 페이지</title>
+</head>
+<body>
+    Welcome @Context.Session.GetString("username")
+    <br />
+    <a asp-controller="account" asp-action="logout">Logout</a>
+
+</body>
+</html>
